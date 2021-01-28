@@ -1,7 +1,7 @@
 # Личный проект «Кексобукинг»
 
 * Студент: [Виталий Беляков](https://up.htmlacademy.ru/javascript/22/user/1480293).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Кривокора](https://htmlacademy.ru/profile/krivokora).
 
 ---
 
