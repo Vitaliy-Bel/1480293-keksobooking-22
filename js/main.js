@@ -22,14 +22,15 @@ console.log(getRandomIntInclusive(20, 10));
 let getRandomIntInclusiveFloatingPoint = function (min, max, numberofdecimalplaces) {
   if (max > min) {
     let randNum = Math.random() * (max - min + 1) + min;  // почему не округляет до целого если так: randNum = Math.floor(Math.random() * (max - min + 1)) + min
-    return getRandomIntInclusiveFloatingPoint = randNum.toFixed(numberofdecimalplaces); // Почему здесь ошибка если вверху объявляешь const getRandomIntInclusiveFloatingPoint?
+    return randNum.toFixed(numberofdecimalplaces); // Почему здесь ошибка если вверху объявляешь const getRandomIntInclusiveFloatingPoint?
   }                                                                                                    // И почему если обернуть randNum.toFixed(numberofdecimalplaces) в parseFloat, то целое число получается?
   else {
     let difference = max - min;
     difference = Math.abs(difference);
-    return getRandomIntInclusiveFloatingPoin = Math.floor(Math.random() * (difference + 1)) + min;
+    console.log (difference);
+    return Math.floor(Math.random() * (difference + 1)) + min;
 
   }
 }
-console.log(getRandomIntInclusiveFloatingPoint(10.154, 20.234, 3));
+console.log(getRandomIntInclusiveFloatingPoint(20.154, 10.234, 3));
 
