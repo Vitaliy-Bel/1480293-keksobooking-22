@@ -1,8 +1,5 @@
-import './util.js';
 
-
-
-/*let getRandomNumberAvatar = function (min, max) {
+let getRandomNumberAvatar = function (min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 
@@ -29,6 +26,7 @@ let getRandomIntInclusiveFloatingPoint = function (min, max, numberofdecimalplac
     return Math.floor(Math.random() * (difference + 1)) + min;
   }
 };
+
 const TYPE = [
   'palace',
   'flat',
@@ -65,8 +63,8 @@ const PHOTOS = [
 
 const getRandomArrayElement = (elements) => {
   return elements[Math.ceil(Math.random()*(0, elements.length - 1))];
-};*/
-/*
+};
+
 const createWizard = () => {
   return {
     author: {
@@ -92,8 +90,5 @@ const createWizard = () => {
     },
   };
 };
-const SIMILAR_WIZARD_COUNT = 10;
-const similarWizards = new Array(SIMILAR_WIZARD_COUNT).fill(null).map(() => createWizard());
 
-console.log(similarWizards);
-*/
+export {createWizard};
